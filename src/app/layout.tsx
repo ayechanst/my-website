@@ -14,21 +14,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const head = (
-    <div>
-      <header>Aye Chan's Website</header>
-    </div>
+  const header = (
+    <header>
+      <div>
+        <h1>Aye Chan's Website</h1>
+        <p>Welcome!</p>
+        <br />
+      </div>
+    </header>
   );
 
   const footer = (
-    <div>
-      <h3>Developed by Aye Chan</h3>
-    </div>
+    <footer>
+      <div>
+        <br />
+        <h3>Developed by Aye Chan</h3>
+      </div>
+    </footer>
   );
 
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {head}
+        {children}
+        {footer}
+      </body>
     </html>
   );
 }
