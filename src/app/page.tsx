@@ -1,4 +1,5 @@
 import fs from "fs";
+import Link from "next/link";
 
 const getSectionMetaData = () => {
   const folder = "sections/";
@@ -14,11 +15,15 @@ const getSectionMetaData = () => {
 
 const Home = () => {
   const sectionMetaData = getSectionMetaData();
-  const sectionPreviews = sectionMetaData.map((slug) => (
-    <div>
-      <h2>{slug}</h2>
-    </div>
-  ));
+  const sectionPreviews = sectionMetaData.map((slug) => {
+    return (
+      <div>
+        <Link href={`/sections/${slug}`}>
+          <h2>{slug}</h2>
+        </Link>
+      </div>
+    );
+  });
   return (
     <div>
       Hello
