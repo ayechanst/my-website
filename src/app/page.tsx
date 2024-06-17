@@ -2,8 +2,10 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div>
-      <div className="flex flex-col">
+    <div className="bg-primary-content ">
+      <h1>Overview</h1>
+      <p>This is my overview</p>
+      <div className="flex flex-col max-h-full">
         <Link href="/pageProjects" className="link">
           Projects
         </Link>

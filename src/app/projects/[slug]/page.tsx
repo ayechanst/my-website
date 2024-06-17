@@ -25,7 +25,11 @@ const Projects = (props: any) => {
   return (
     <div>
       <h1>{post.data.title}</h1>
-      <Markdown options={options}>{post.content}</Markdown>
+      <article className="prose lg:prose-xl">
+        <Markdown options={options}>
+          {post.content}
+        </Markdown>
+      </article>
     </div>
   );
 };
