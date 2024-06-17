@@ -1,5 +1,7 @@
 import fs from "fs";
 import Link from "next/link";
+import Markdown from "markdown-to-jsx";
+import { options } from "../../../../components/MarkdownComponents";
 
 const getPostContent = (slug: string) => {
   const folder = "projects/";
@@ -13,8 +15,8 @@ const Projects = (props: any) => {
   const content = getPostContent(slug);
   return (
     <div>
-      <div>projects. slug: {slug}</div>;
-      <div>content: {content}</div>
+      <div>projects. slug: {slug}</div>
+      <Markdown options={options}>{content}</Markdown>
     </div>
   );
 };
