@@ -26,8 +26,9 @@ const Home = () => {
   });
   return (
     <div>
-      Hello
-      <div>{sectionPreviews}</div>
+      {/* Hello
+      <div>{sectionPreviews}</div> */}
+      <button className="btn btn-wide">Wide</button>
     </div>
   );
 };
