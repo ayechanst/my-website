@@ -1,20 +1,11 @@
 import Link from "next/link";
 import getSectionMetaData from "../../../components/getSectionMetadata";
+import PostPreview from "../../../components/PostPreview";
 
 const PageProjects = () => {
   const sectionMetaData = getSectionMetaData();
   const sectionPreviews = sectionMetaData.map((post) => {
-    return (
-      <div>
-        <Link
-          href={`/projects/${post.slug}`}
-          className="link-accent"
-        >
-          <h2>{post.title}</h2>
-        </Link>
-        <p>{post.subtitle}</p>
-      </div>
-    );
+    return <PostPreview key={post.slug} {...post} />;
   });
 
   return <div>{sectionPreviews}</div>;
