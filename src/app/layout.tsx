@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const header = (
-    <header className="w-full bg-gray-800 text-white p-4">
+    <header className="w-full bg-primary text-white p-4">
       <div className="container mx-auto">
         <h1 className="text-2xl">Aye Chan's Website</h1>
         <p>Welcome!</p>
@@ -24,7 +24,7 @@ export default function RootLayout({
   );
 
   const footer = (
-    <footer className="w-full bg-gray-800 text-white p-4 mt-auto">
+    <footer className="w-full bg-secondary text-white p-4 mt-auto">
       <div className="container mx-auto">
         <h3 className="text-xl">Developed by Aye Chan</h3>
       </div>
@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col min-h-screen`}
       >
         {header}
-        <main className="flex-grow container mx-auto flex items-center justify-center">
+        <main className="flex-grow container mx-auto flex items-center justify-center bg-accent">
           {children}
         </main>
         {footer}
