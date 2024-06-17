@@ -1,22 +1,31 @@
 import fs from "fs";
-import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import { options } from "../../../../components/MarkdownComponents";
+import matter from "gray-matter";
+import getSectionMetaData from "../../../../components/getSectionMetadata";
 
 const getPostContent = (slug: string) => {
   const folder = "projects/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
-  return content;
+  const matterResult = matter(content);
+  return matterResult;
+};
+
+export const generateStaticParams = async () => {
+  const posts = getSectionMetaData();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 };
 
 const Projects = (props: any) => {
   const slug = props.params.slug;
-  const content = getPostContent(slug);
+  const post = getPostContent(slug);
   return (
     <div>
-      <div>projects. slug: {slug}</div>
-      <Markdown options={options}>{content}</Markdown>
+      <h1>{post.data.title}</h1>
+      <Markdown options={options}>{post.content}</Markdown>
     </div>
   );
 };

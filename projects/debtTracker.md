@@ -1,5 +1,5 @@
 ---
-title: "Debt Tracker"
+title: "Debt Tracker Title Test"
 subtitle: "A dApp responsible for keeping track of debts amongst friends"
 data: "2024-05-17"
 ---

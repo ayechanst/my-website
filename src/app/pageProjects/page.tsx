@@ -1,27 +1,18 @@
-import fs from "fs";
 import Link from "next/link";
+import getSectionMetaData from "../../../components/getSectionMetadata";
 
-const getSectionMetaData = () => {
-  const folder = "projects/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) =>
-    file.endsWith(".md")
-  );
-  const slugs = markdownPosts.map((file) =>
-    file.replace(".md", "")
-  );
-  return slugs;
-};
-
-const PageProjects = (props: any) => {
-  const slug = props.params.slug;
+const PageProjects = () => {
   const sectionMetaData = getSectionMetaData();
-  const sectionPreviews = sectionMetaData.map((slug) => {
+  const sectionPreviews = sectionMetaData.map((post) => {
     return (
       <div>
-        <Link href={`/projects/${slug}`}>
-          <h2>{slug}</h2>
+        <Link
+          href={`/projects/${post.slug}`}
+          className="link-accent"
+        >
+          <h2>{post.title}</h2>
         </Link>
+        <p>{post.subtitle}</p>
       </div>
     );
   });
