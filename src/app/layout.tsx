@@ -15,29 +15,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const header = (
-    <header>
-      <div>
-        <h1>Aye Chan's Website</h1>
+    <header className="w-full bg-gray-800 text-white p-4">
+      <div className="container mx-auto">
+        <h1 className="text-2xl">Aye Chan's Website</h1>
         <p>Welcome!</p>
-        <br />
       </div>
     </header>
   );
 
   const footer = (
-    <footer>
-      <div>
-        <br />
-        <h3>Developed by Aye Chan</h3>
+    <footer className="w-full bg-gray-800 text-white p-4 mt-auto">
+      <div className="container mx-auto">
+        <h3 className="text-xl">Developed by Aye Chan</h3>
       </div>
     </footer>
   );
 
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" data-theme="cupcake" className="h-full">
+      <body
+        className={`${inter.className} flex flex-col min-h-screen`}
+      >
         {header}
-        {children}
+        <main className="flex-grow container mx-auto flex items-center justify-center">
+          {children}
+        </main>
         {footer}
       </body>
     </html>

@@ -28,7 +28,11 @@ const Home = () => {
     <div>
       {/* Hello
       <div>{sectionPreviews}</div> */}
-      <button className="btn btn-wide">Wide</button>
+      <div className="flex flex-col">
+        <Link href="/projects">Projects</Link>
+        <Link href="/experiences">Experiences</Link>
+        <Link href="/blogs">Blogs</Link>
+      </div>
     </div>
   );
 };
