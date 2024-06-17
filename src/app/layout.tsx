@@ -19,7 +19,9 @@ export default function RootLayout({
     <header className="w-full bg-primary text-white p-4">
       <div className="container mx-auto">
         <Link href="/">
-          <h1 className="text-2xl">Aye Chan's Website</h1>
+          <h1 className="text-2xl">
+            Aye Chan's Documentation
+          </h1>
         </Link>
 
         <p>Welcome!</p>
@@ -38,14 +40,16 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="cupcake" className="h-full">
       <body
-        className={`${inter.className} flex flex-col min-h-screen`}
+        className={`flex flex-col min-h-screen bg-accent`}
       >
         {header}
+        {/* <div className="mx-auto max-w-3xl px-7 bg-accent">
+          {children}
+        </div> */}
+        {/* <main className="flex-grow container flex items-center justify-center bg-accent"> */}
         <div className="mx-auto max-w-3xl px-7">
           {children}
         </div>
-        {/* <main className="flex-grow container mx-auto flex items-center justify-center bg-accent">
-        </main> */}
         {footer}
       </body>
     </html>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import getSectionMetaData from "../../../components/getSectionMetadata";
 import PostPreview from "../../../components/PostPreview";
 
