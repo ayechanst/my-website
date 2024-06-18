@@ -13,7 +13,7 @@ const getPostContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const posts = getSectionMetaData();
+  const posts = getSectionMetaData("projects");
   return posts.map((post) => ({
     slug: post.slug,
   }));

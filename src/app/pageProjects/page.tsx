@@ -1,9 +1,9 @@
-import getSectionMetaData from "../../../components/getSectionMetadata";
+import getSectionMetadata from "../../../components/getSectionMetadata";
 import PostPreview from "../../../components/PostPreview";
 
 const PageProjects = () => {
-  const sectionMetaData = getSectionMetaData();
-  const sectionPreviews = sectionMetaData.map((post) => {
+  const sectionMetadata = getSectionMetadata("projects");
+  const sectionPreviews = sectionMetadata.map((post) => {
     return <PostPreview key={post.slug} {...post} />;
   });
 

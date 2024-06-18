@@ -2,17 +2,24 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="bg-primary-content ">
-      <h1>Overview</h1>
-      <p>This is my overview</p>
-      <div className="flex flex-col max-h-full">
-        <Link href="/pageProjects" className="link">
+    <div className="bg-primary-content">
+      <div className="flex flex-col max-h-full space-y-4">
+        <Link
+          href="/pageProjects"
+          className="link font-bold text-2xl"
+        >
           Projects
         </Link>
-        <Link href="/pageExperiences" className="link">
+        <Link
+          href="/pageExperiences"
+          className="link font-bold text-2xl"
+        >
           Experiences
         </Link>
-        <Link href="/pageBlogs" className="link">
+        <Link
+          href="/pageBlogs"
+          className="link font-bold text-2xl"
+        >
           Blogs
         </Link>
       </div>
