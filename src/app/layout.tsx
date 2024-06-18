@@ -14,45 +14,45 @@ export default function RootLayout({
     <header className="w-full text-accent p-10">
       <div className="pl-20 mx-auto">
         <Link href="/" className="text-4xl">
-          [Aye Chan Portfolio]
+          [Aye Chan's Website]
         </Link>
       </div>
     </header>
   );
 
-  // const footer = (
-  //   <footer>
-  //     <div className="border-t border-slate-600 mt-6 py-6 text-center text-cyan-200">
-  //       <h3>connect with me: </h3>
-  //       <div className="flex justify-center space-x-4">
-  //         <a
-  //           href="https://github.com/ayechanst"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="hover:text-gray-400"
-  //         >
-  //           GitHub
-  //         </a>
-  //         <a
-  //           href="https://t.me/ayechan1000"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="hover:text-gray-400"
-  //         >
-  //           Telegram
-  //         </a>
-  //         <a
-  //           href="https://medium.com/@ayechansant"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="hover:text-gray-400"
-  //         >
-  //           Medium
-  //         </a>
-  //       </div>
-  //     </div>
-  //   </footer>
-  // );
+  const footer = (
+    <footer>
+      <div className="border-t border-slate-600 mt-2 py-2 text-center text-cyan-200">
+        <h3>connect with me: </h3>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="https://github.com/ayechanst"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://t.me/ayechan1000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            Telegram
+          </a>
+          <a
+            href="https://medium.com/@ayechansant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            Medium
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 
   return (
     <html className="h-full">
@@ -62,7 +62,7 @@ export default function RootLayout({
         <div className="flex-grow max-h-full mx-auto max-w-3xl px-7">
           {children}
         </div>
-        {/* <div className="max-h-full">{footer}</div> */}
+        <div className="">{footer}</div>
       </body>
     </html>
   );

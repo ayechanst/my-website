@@ -23,15 +23,27 @@ const Projects = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div>
-      <h1>{post.data.title}</h1>
-      <article className="prose lg:prose-xl">
+    <>
+      <h1 className="text-3xl font-bold text-cyan-50 border-b border-cyan-900 pb-4 mb-6">
+        {post.data.title}
+      </h1>
+      <article className="prose lg:prose-xl text-cyan-100">
         <Markdown options={options}>
           {post.content}
         </Markdown>
       </article>
-    </div>
+    </>
   );
+  // return (
+  //   <div>
+  //     <h1>{post.data.title}</h1>
+  //     <article className="prose lg:prose-xl">
+  //       <Markdown options={options}>
+  //         {post.content}
+  //       </Markdown>
+  //     </article>
+  //   </div>
+  // );
 };
 
 export default Projects;
