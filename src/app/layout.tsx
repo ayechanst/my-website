@@ -12,9 +12,9 @@ export default function RootLayout({
 }>) {
   const header = (
     <header className="w-full text-accent p-10">
-      <div className="pl-20 mx-auto">
+      <div className="text-center">
         <Link href="/" className="text-4xl">
-          [Aye Chan's Website]
+          [Aye Chan's Webpage]
         </Link>
       </div>
     </header>
