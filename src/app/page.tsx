@@ -1,28 +1,38 @@
 import Link from "next/link";
+import QuickLinks from "../../components/QuickLinks";
 
 const Home = () => {
   return (
     <div className="bg-primary-content max-h-full">
       <div className="py-5 flex">
-        <div className="">
-          <img
-            src={"/profile.jpeg"}
-            alt="my face turned to the side"
-            className="w-34 h-auto rounded-lg"
-          />
+        <div className="avatar">
+          <div className="w-34 rounded-xl">
+            <img
+              src={"/profile.jpeg"}
+              alt="my face turned to the side"
+              // className="w-34 h-auto rounded-lg"
+            />
+          </div>
         </div>
         <div className="m-5">
           <div className="pb-1 text-3xl font-bold">
             Welcome :)
           </div>
-          <div>
-            I'm Aye Chan. I graduated in philosophy, taught
-            myself to program, and now I educate in Web3.
-            Check out my projects and blogs.
+          <div className="pb-4">
+            I'm Aye Chan (that's my first name), I'm
+            primarily a programmer, and an aspiring
+            developer advocate.
           </div>
+          <div>
+            Other than that, I'm an explorer of the human
+            condition, a writer, a reader, a thinker, an
+            executor, and above all else, just a typical a
+            life enjoyer.
+          </div>
+          <QuickLinks />
         </div>
       </div>
-      <div className="flex flex-col max-h-full space-y-20 mt-8">
+      {/* <div className="flex flex-col max-h-full space-y-20 mt-8">
         <div>
           <Link
             href="/pageProjects"
@@ -40,7 +50,7 @@ const Home = () => {
         </Link>
         <div className="link font-bold text-xl">Videos</div>
         <div className="link font-bold text-xl">Resume</div>
-      </div>
+      </div> */}
     </div>
   );
 };
