@@ -16,4 +16,8 @@ const Divider = () => {
   );
 };
 
+// For person inquiry: library, book reviews, essays, advice i'd tell myself, my story, favorite games. life philosophy, role models, who am i made out of. mbti, jung
+
+// professional: projects, documentations, resume, work experience.
+
 export default Divider;
