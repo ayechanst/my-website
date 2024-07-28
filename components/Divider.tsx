@@ -1,24 +1,28 @@
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Divider = () => {
   return (
     <>
       <div className="flex w-full flex-col lg:flex-row">
-        <Link
-          href="/personal"
+        <motion.div
+          whileHover={{ scale: 1.025 }}
           className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center"
         >
-          Personal Inquiry
-        </Link>
+          <Link href="/personal">Personal Inquiry</Link>
+        </motion.div>
         <div className="divider lg:divider-horizontal">
           OR
         </div>
-        <Link
-          href="/professional"
+        <motion.div
+          whileHover={{ scale: 1.025 }}
           className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center"
         >
-          Professional Inquiry
-        </Link>
+          <Link href="/professional">
+            Professional Inquiry
+          </Link>
+        </motion.div>
       </div>
     </>
   );
