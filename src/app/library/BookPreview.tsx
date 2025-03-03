@@ -5,9 +5,9 @@ interface BookProps {
 
 const BookPreview = ({ title, author }: BookProps) => {
   return (
-    <div>
+    <div className="border-t p-2 m-1">
+      <div className="font-bold">{title}</div>
       <div>{author}</div>
-      <div>{title}</div>
     </div>
   );
 };
