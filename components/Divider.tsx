@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Divider = () => {
@@ -8,7 +7,6 @@ const Divider = () => {
   return (
     <>
       <div className="flex w-full flex-col lg:flex-row">
-        {/* <Link href="/personal" passHref> */}
         <motion.div
           whileHover={{ scale: 1.025 }}
           className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center"
@@ -16,17 +14,15 @@ const Divider = () => {
         >
           <div>Personal Inquiry</div>
         </motion.div>
-        {/* </Link> */}
         <div className="divider lg:divider-horizontal">
           OR
         </div>
         <motion.div
           whileHover={{ scale: 1.025 }}
           className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center"
+          onClick={() => router.push("/professional")}
         >
-          <Link href="/professional">
-            Professional Inquiry
-          </Link>
+          <div>Professional Inquiry</div>
         </motion.div>
       </div>
     </>

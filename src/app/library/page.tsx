@@ -1,3 +1,5 @@
+import BookPreview from "./BookPreview";
+
 const Library = () => {
   const bookArray = [
     {
@@ -46,13 +48,13 @@ const Library = () => {
       <div>
         <h3>Books</h3>
         <div>
-          {bookArray.map((book) => (
-            <div key={`${book.author} + ${book.title}`}>
+          {bookArray.map((book, index) => (
+            <div key={index}>
               <div className="flex">
-                <div>{book.author} </div>
-                <div className="italic text-accent">
-                  {book.title}
-                </div>
+                <BookPreview
+                  title={book.title}
+                  author={book.author}
+                />
               </div>
             </div>
           ))}
