@@ -50,7 +50,8 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <div className="border-t border-slate-600 mt-2 py-2 text-center text-cyan-200">
+      {/* <div className="border-t border-slate-600 mt-2 py-2 text-center text-cyan-200"> */}
+      <div className="border-t mt-2 py-2 text-center">
         <h3>connect with me: </h3>
         <div className="flex justify-center space-x-4">
           <a
@@ -83,9 +84,9 @@ export default function RootLayout({
   );
 
   return (
-    <html className="h-full">
+    <html className="h-full" data-theme="dark">
       <head />
-      <body className="flex flex-col min-h-screen bg-primary-content">
+      <body className="flex flex-col min-h-screen bg-primary-content text-base-content">
         {header}
         <div className="flex-grow max-h-full mx-auto max-w-3xl px-7">
           {children}

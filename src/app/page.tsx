@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import QuickLinks from "../../components/QuickLinks";
 import Divider from "../../components/Divider";
@@ -22,14 +23,8 @@ const Home = () => {
           <div className="m-5 flex flex-col items-center">
             <div className="pb-4">
               I'm Aye Chan (that's my first name), I'm
-              primarily a programmer, and an aspiring
-              developer advocate.
-            </div>
-            <div>
-              Other than that, I'm an explorer of the human
-              condition, a writer, a reader, a thinker, an
-              executor, and above all... a typical life
-              enjoyer.
+              computer programmer by trade, but on here I'm
+              just a guy with a website.
             </div>
             <QuickLinks />
           </div>
