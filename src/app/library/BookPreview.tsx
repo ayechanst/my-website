@@ -16,16 +16,16 @@ const BookPreview = ({
       <div className="font-extrabold">
         <a
           href={link}
-          target="_blank" // Opens the link in a new tab
-          rel="noopener noreferrer" // Recommended for security reasons
+          target="_blank"
+          rel="noopener noreferrer" // for security reasons
         >
           {title}
         </a>
       </div>
-      <div>
-        <div>{author}</div>
-        <div>{rating}</div>
-      </div>
+      <ul>
+        <li>- {author}</li>
+        <li>- {rating}</li>
+      </ul>
     </div>
   );
 };

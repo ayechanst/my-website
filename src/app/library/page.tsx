@@ -4,7 +4,7 @@ import BookPreview from "./BookPreview";
 import { bookArray } from "./books";
 
 const Library = () => {
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("all");
   console.log("filter: ", filter);
 
   const filteredBooks =

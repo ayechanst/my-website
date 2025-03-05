@@ -23,8 +23,8 @@ const Home = () => {
           <div className="m-5 flex flex-col items-center">
             <div className="pb-4">
               I'm Aye Chan (that's my first name), I'm
-              computer programmer by trade, but on here I'm
-              just a guy with a website.
+              computer programmer by trade, and this is my
+              website.
             </div>
             <QuickLinks />
           </div>
