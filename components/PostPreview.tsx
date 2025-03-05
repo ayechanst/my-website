@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { PostMetadata } from "./PostMetadata";
+
+interface PostMetadata {
+  title: string;
+  date: string;
+  subtitle: string;
+  slug: string;
+  folder: string;
+}
 
 const PostPreview = (props: PostMetadata) => {
   return (
