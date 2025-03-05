@@ -10,7 +10,9 @@ const Library = () => {
   const filteredBooks =
     filter === "all"
       ? bookArray
-      : bookArray.filter((book) => book.genre === filter);
+      : bookArray.filter((book) =>
+          book.genre.includes(filter)
+        );
 
   return (
     <>
