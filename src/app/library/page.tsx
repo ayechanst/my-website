@@ -6,9 +6,15 @@ import { bookArray } from "./books";
 const Library = () => {
   const [filter, setFilter] = useState("");
   console.log("filter: ", filter);
+
+  const filteredBooks =
+    filter === "all"
+      ? bookArray
+      : bookArray.filter((book) => book.genre === filter);
+
   return (
     <>
-      <div>
+      <div className="flex flex-col items-center">
         <div className="join">
           <input
             className="join-item btn"
@@ -47,12 +53,13 @@ const Library = () => {
           />
         </div>
         <div>
-          {bookArray.map((book, index) => (
+          {filteredBooks.map((book, index) => (
             <div key={index}>
               <div className="flex">
                 <BookPreview
                   title={book.title}
                   author={book.author}
+                  rating={book.rating}
                 />
               </div>
             </div>
