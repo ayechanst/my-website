@@ -62,6 +62,7 @@ const Library = () => {
                   title={book.title}
                   author={book.author}
                   rating={book.rating}
+                  link={book.link}
                 />
               </div>
             </div>
