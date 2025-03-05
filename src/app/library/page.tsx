@@ -1,52 +1,51 @@
+"use client";
+import { useState } from "react";
 import BookPreview from "./BookPreview";
+import { bookArray } from "./books";
 
 const Library = () => {
-  const bookArray = [
-    {
-      title:
-        "The Red Queen, Sex and the Evolution of Human Nature",
-      author: "Matt Ridley",
-    },
-    {
-      title:
-        "The Right to Sex, Feminism in the Twenty-First Century",
-      author: "Amia Srinivasan",
-    },
-    {
-      title: "King Warrior Magician Lover",
-      author: "Robert Moore & Douglas Gillette",
-    },
-    {
-      title: "The History of Money",
-      author: "Jack Weatherford",
-      class: "Social Science, finance, money (HG231.W4)",
-    },
-    {
-      title:
-        "Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness",
-      author: "Peter-Godfrey-Smith",
-    },
-    {
-      title: "Children of Time",
-      author: "Adrian Tchaikovsky",
-    },
-    {
-      title: "Genghis Khan",
-      author: "Jack Weatherford",
-    },
-    {
-      title:
-        "The Conspiracy Against the Human Race: A Contrivance of Horror",
-      author: "Thomas Ligotti",
-      class:
-        "Language and Literature, Literature(general), Theory . Philosophy . Esthetics (PN56)",
-    },
-  ];
-
+  const [filter, setFilter] = useState("");
+  console.log("filter: ", filter);
   return (
     <>
       <div>
-        <h3>Books</h3>
+        <div className="join">
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="All"
+            onClick={() => setFilter("all")}
+          />
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="Science"
+            onClick={() => setFilter("science")}
+          />
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="History"
+            onClick={() => setFilter("history")}
+          />
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="Philosophy"
+            onClick={() => setFilter("philosophy")}
+          />
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="Fiction"
+            onClick={() => setFilter("fiction")}
+          />
+        </div>
         <div>
           {bookArray.map((book, index) => (
             <div key={index}>
