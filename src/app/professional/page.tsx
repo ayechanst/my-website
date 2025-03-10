@@ -11,6 +11,7 @@ const ProfessionalPage = () => {
       >
         Projects
       </div>
+      <div className="text-2xl">Resume</div>
     </>
   );
 };

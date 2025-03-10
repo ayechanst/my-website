@@ -53,6 +53,13 @@ const Library = () => {
             aria-label="Fiction"
             onClick={() => setFilter("fiction")}
           />
+          <input
+            className="join-item btn"
+            type="radio"
+            name="options"
+            aria-label="Skill Building"
+            onClick={() => setFilter("skill building")}
+          />
         </div>
         <div>
           {filteredBooks.map((book, index) => (
