@@ -13,7 +13,7 @@ export default function RootLayout({
         <Link href="/">Home</Link>
         <div>Series</div>
         <div>Projects</div>
-        <div>About</div>
+        <Link href="/about">About</Link>
         <Link href="/library">Library</Link>
       </div>
     </header>
@@ -62,7 +62,6 @@ export default function RootLayout({
         <div className="flex-grow mx-auto items-center">
           {children}
         </div>
-        <div className="">{footer}</div>
       </body>
     </html>
   );

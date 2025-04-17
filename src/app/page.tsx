@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PostSection from "../../components/PostSection";
 
 const Home = () => {
