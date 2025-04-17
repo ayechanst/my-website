@@ -16,6 +16,7 @@ const config: Config = {
   plugins: [
     require("daisyui"),
     require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
   ],
   daisyui: {
     themes: ["light", "dark"],
