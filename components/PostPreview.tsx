@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface PostMetadata {
+export interface PostMetadata {
   title: string;
   date: string;
   subtitle: string;
@@ -10,7 +10,7 @@ interface PostMetadata {
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <div className="border border-secondary p-4 rounded-md shadow-md m-2">
+    <div className="p-4 rounded-md shadow-md m-2">
       <Link href={`/${props.folder}/${props.slug}`}>
         <h2 className="font-bold hover:underline text-cyan-50 text-2xl">
           {props.title}

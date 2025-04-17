@@ -2,7 +2,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import { options } from "../../../../components/MarkdownComponents";
 import matter from "gray-matter";
-import getSectionMetaData from "../../../../components/getSectionMetadata";
+import getSectionMetaData from "../../../../helpers/getSectionMetadata";
 
 const getPostContent = (slug: string) => {
   const folder = "projects/";

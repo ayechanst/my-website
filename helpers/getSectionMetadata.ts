@@ -1,8 +1,10 @@
 import matter from "gray-matter";
-import { PostMetadata } from "./PostMetadata";
 import fs from "fs";
+import { PostMetadata } from "../components/PostPreview";
 
-const getSectionMetadata = (route: string): PostMetadata[] => {
+const getSectionMetadata = (
+  route: string
+): PostMetadata[] => {
   const folder = `${route}/`;
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) =>
@@ -21,7 +23,7 @@ const getSectionMetadata = (route: string): PostMetadata[] => {
       slug: fileName.replace(".md", ""),
       folder: route,
     };
-  })
+  });
   return posts;
 };
 

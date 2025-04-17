@@ -1,4 +1,4 @@
-import getSectionMetadata from "../../../components/getSectionMetadata";
+import getSectionMetadata from "../../../helpers/getSectionMetadata";
 import PostPreview from "../../../components/PostPreview";
 
 const PageProjects = () => {
