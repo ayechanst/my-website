@@ -2,6 +2,7 @@
 title: "Platinum Ethereum"
 subtitle: "A free and open source course about blockchains"
 data: "2024-05-17"
+image: "/emrakul.png"
 ---
 
 # Under Construction

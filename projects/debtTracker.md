@@ -2,6 +2,7 @@
 title: "Debt Tracker"
 subtitle: "A dApp responsible for keeping track of debts amongst friends"
 data: "2024-05-17"
+image: "/smothering-tithe.png"
 ---
 
 This is a tool that I decided to build because at

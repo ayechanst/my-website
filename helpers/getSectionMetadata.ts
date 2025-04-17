@@ -22,6 +22,7 @@ const getSectionMetadata = (
       subtitle: matterResult.data.subtitle,
       slug: fileName.replace(".md", ""),
       folder: route,
+      image: matterResult.data.image,
     };
   });
   return posts;

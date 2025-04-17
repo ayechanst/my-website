@@ -1,11 +1,12 @@
+import Link from "next/link";
 import PostSection from "../../components/PostSection";
 
 const Home = () => {
   return (
-    <div className="bg-primary-content max-h-full">
-      <div className="p-5 flex">
+    <div className="bg-primary-content flex flex-col">
+      <div className="p-5 flex justify-center">
         <div>
-          <div className="m-5 pb-1 text-3xl font-bold">
+          <div className="m-5 text-3xl font-bold">
             Briding the Gap Between Tech and Humans
           </div>
           <div className="m-5 flex flex-col items-center">

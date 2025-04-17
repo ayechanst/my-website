@@ -58,7 +58,8 @@ export default function RootLayout({
       <head />
       <body className="flex flex-col min-h-screen bg-primary-content text-base-content">
         {header}
-        <div className="flex-grow max-h-full mx-auto max-w-3xl px-7">
+        {/* <div className="flex-grow max-h-full mx-auto max-w-3xl px-7"> */}
+        <div className="flex-grow mx-auto items-center">
           {children}
         </div>
         <div className="">{footer}</div>

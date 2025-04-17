@@ -6,19 +6,21 @@ export interface PostMetadata {
   subtitle: string;
   slug: string;
   folder: string;
+  image: string;
 }
 
 const PostPreview = (props: PostMetadata) => {
   return (
     <Link
       href={`/${props.folder}/${props.slug}`}
-      className="block"
+      className="block m-3"
     >
-      <div className="w-full h-48 p-4 rounded-xl shadow-lg hover:scale-[1.02] hover:shadow-xl transition-transform duration-300 cursor-pointer flex flex-col justify-between">
-        <div>
-          <h2 className="font-bold text-accent text-2xl mb-2">
-            {props.title}
-          </h2>
+      <div className="card bg-base-100 w-96 shadow-lg hover:scale-[1.02] hover:shadow-xl transition-transform duration-300 cursor-pointer">
+        <figure>
+          <img src={props.image} alt={props.title} />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{props.title}</h2>
           <p className="text-accent line-clamp-3">
             {props.subtitle}
           </p>

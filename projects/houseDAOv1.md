@@ -2,6 +2,7 @@
 title: "House DAO v1"
 subtitle: "A dApp responsible for keeping track of chores"
 data: "2024-05-17"
+image: "/house-dao.png"
 ---
 
 This is a prototype of a full-blown decentralized application. It is called Domus DAO
