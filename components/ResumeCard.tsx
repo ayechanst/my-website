@@ -1,20 +1,19 @@
-"use client";
-import { Viewer } from "@react-pdf-viewer/core";
-import { useState } from "react";
+type ResumeCardProps = {
+  title: string;
+  file: string;
+};
 
-const ResumeCard = ({ src }: { src: string }) => {
-  const [expanded, setExpanded] = useState(false);
-
+const ResumeCard = ({ title, file }: ResumeCardProps) => {
   return (
-    <div
-      onClick={() => setExpanded(!expanded)}
-      className={`cursor-pointer transition-all duration-300 rounded-xl shadow-md overflow-hidden border border-base-200 ${
-        expanded
-          ? "w-full h-[90vh] col-span-3"
-          : "w-64 h-96"
-      }`}
-    >
-      <Viewer fileUrl={src} />
+    <div>
+      <a
+        href={`/${file}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-base-100 hover:bg-base-200 shadow-md rounded-xl p-4 text-center transition duration-200 w-64"
+      >
+        <span className="font-semibold">{title}</span>
+      </a>
     </div>
   );
 };
