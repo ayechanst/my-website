@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const header = (
-    <header className="w-full text-accent p-10">
+    <header className="w-full text-accent p-6 pl-12">
       <div className="flex justify-start gap-6 text-xl font-bold">
         <Link
           href="/"
