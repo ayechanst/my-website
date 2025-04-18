@@ -9,12 +9,25 @@ export default function RootLayout({
 }>) {
   const header = (
     <header className="w-full text-accent p-10">
-      <div className="flex justify-start gap-6 text-xl">
-        <Link href="/">Home</Link>
-        <div>Series</div>
-        <div>Projects</div>
-        <Link href="/about">About</Link>
-        <Link href="/library">Library</Link>
+      <div className="flex justify-start gap-6 text-xl font-bold">
+        <Link
+          href="/"
+          className="hover:text-secondary transition-colors duration-300"
+        >
+          Home
+        </Link>
+        <Link
+          href="/library"
+          className="hover:text-secondary transition-colors duration-300"
+        >
+          Library
+        </Link>
+        <Link
+          href="/hireMe"
+          className="hover:text-secondary transition-colors duration-300"
+        >
+          Hiring Me
+        </Link>
       </div>
     </header>
   );
