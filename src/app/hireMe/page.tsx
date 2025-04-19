@@ -25,7 +25,7 @@ const HireMe = () => {
       </div>
       <div className="card bg-base-100 w-[28rem] shadow-sm m-8  hover:scale-[1.02] hover:shadow-xl transition-transform duration-300 cursor-pointer">
         <div className="card-body">
-          <h2 className="card-title">
+          <h2 className="card-title justify-center">
             Why Hire a Philosophy Major?
           </h2>
         </div>

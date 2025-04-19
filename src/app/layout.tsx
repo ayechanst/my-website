@@ -26,7 +26,7 @@ export default function RootLayout({
           href="/hireMe"
           className="hover:text-secondary transition-colors duration-300"
         >
-          Hiring Me
+          Work & Experience
         </Link>
       </div>
     </header>

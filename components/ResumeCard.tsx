@@ -16,7 +16,7 @@ const ResumeCard = ({
         <p className="text-sm text-neutral-content">
           {description}
         </p>
-        <div className="card-actions mt-4">
+        <div className="card-actions mt-4 justify-center gap-4">
           <a
             href={`/${file}`}
             target="_blank"
@@ -25,7 +25,16 @@ const ResumeCard = ({
           >
             View Resume
           </a>
-          {/* {if (title == '')} */}
+          {title === "Developer Relations Resume" && (
+            <a
+              href="/DevRelUniCertificate.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              View Certificate
+            </a>
+          )}
         </div>
       </div>
     </div>
