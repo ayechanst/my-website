@@ -19,12 +19,11 @@ const HireMe = () => {
         />
         <ResumeCard
           title="Non-Tech Resume"
-          file="Resume-DevRel.pdf"
+          file="Resume-nonTech.pdf"
           description="Before working in tech, I've delt with customers at a front desk, I've done manual labor, and I assembled multi-hundred thousand dollar scientific instruments for the Ivy League schools and the US Military."
         />
       </div>
-      {/* <div className="card bg-base-100 w-96 shadow-sm m-8"> */}
-      <div className="card bg-base-100 w-[28rem] shadow-sm m-8">
+      <div className="card bg-base-100 w-[28rem] shadow-sm m-8  hover:scale-[1.02] hover:shadow-xl transition-transform duration-300 cursor-pointer">
         <div className="card-body">
           <h2 className="card-title">
             Why Hire a Philosophy Major?
