@@ -45,32 +45,33 @@ const HireMe = () => {
             on.
           </p>
           <div className="mb-2">
-            <b>The perfect framework for learning</b>
+            <b>- The perfect framework for learning</b>
             <p>
               Philosophy is about asking questions, building
               mental models to dissect, and seeing where the
-              model goes wrong. This rinse repeat process of
+              model goes wrong. The rinse repeat process of
               understanding, reasoning, and improving
-              systems makes people trained in philosophy
-              capable of learning and understanding new
-              topics quickly.
+              systems makes philosophers capable of learning
+              and understanding new topics quickly.
             </p>
           </div>
           <div className="mb-2">
-            <b>Math and Logic</b>
+            <b>- Math and Logic</b>
             <p>
-              Philosophy is the strongest non-liberal art
+              Philosophy is the least liberal art like
               degree in the liberal arts department. Classes
-              like Modern Logic uses symbols to reason about
-              statements, identically to logic gates in
-              computers. Other classes like critical
-              thinking involve breaking written statements
-              down into symbols, and evaluating the truth of
-              a statement with hard logic.
+              like Modern Logic teaches to use symbols to
+              reason about statements, identically to logic
+              gates in computers. Other classes like
+              critical thinking involve breaking written
+              statements down into symbols, and evaluating
+              the truth of a statement with hard logic.
+              Computer science is deeply rooted in analytic
+              philosophy.
             </p>
           </div>
           <div className="mb-2">
-            <b>Reading, Writing, and Communication</b>
+            <b>- Reading, Writing, and Communication</b>
             <p>
               It's no secret programming involves a lot of
               reading, both of code and technical
@@ -84,6 +85,16 @@ const HireMe = () => {
               students shine in law, technical writing, team
               settings, and customer service.
             </p>
+          </div>
+          <div className="card-actions mt-4 justify-center gap-4">
+            <a
+              href="Capstone.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              View Capstone Project
+            </a>
           </div>
         </div>
       </div>
